@@ -60,7 +60,7 @@ nav {
 /* banner design */
 .banner {
     max-width: 1110px;
-    margin: 30px auto;
+    margin: 40px auto;
     height: 600px;
 }
 .banner-content {
@@ -104,6 +104,23 @@ nav {
 .banner-right-content {
     max-width: 440px;
 }
-/* .banner-right-content img {
+.banner-right-content img {
     width: 100%;
-} */
+}
+
+
+
+/* media-query */
+
+@media screen and (max-width: 576px){
+    .navbar, ul {
+        flex-direction: column;
+    }
+    .nav-icon {
+        display: none;
+    }
+    .banner-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}
